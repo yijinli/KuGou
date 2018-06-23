@@ -1,0 +1,39 @@
+﻿<Window x:Class="KuGou.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KuGou"
+        mc:Ignorable="d"
+        WindowStyle="None"
+        AllowsTransparency="True">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.4*"/>
+            <ColumnDefinition Width="0.6*"/>
+        </Grid.ColumnDefinitions>
+        <Border Grid.ColumnSpan="2"
+                Background="#0095E7"/>
+        <Grid>
+            <TextBlock Text="登录" 
+                       VerticalAlignment="Center"
+                       Cursor="Hand"
+                       Foreground="White"
+                       Margin="50 0 0 0"/>
+            <TextBlock Text="|" 
+                       VerticalAlignment="Center"
+                       Cursor="Hand"
+                       Foreground="White"
+                       Margin="90 0 0 0"/>
+            <TextBlock Text="注册" 
+                       VerticalAlignment="Center"
+                       Cursor="Hand"
+                       Foreground="White"
+                       Margin="100 0 0 0"/>
+        </Grid>
+    </Grid>
+</Window>
